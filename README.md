@@ -71,6 +71,7 @@ We are now at the last part of step by step guide on how to simulate STM32 proje
 
 
 ## STM 32 CUBE PROGRAM :
+```
 Developed by:Vasundra sri.R
 Reference number:212222230168
 
@@ -110,20 +111,20 @@ void Error_Handler(void)
 }
 
 	
-
+```
 
 
 
 
 ## Output screen shots of proteus  :
+LED ON:
+
+![Screenshot 2023-04-26 084835](https://user-images.githubusercontent.com/119393983/234461116-cf910085-2a35-4dcd-aad9-70f9e18b16a7.jpg)
+
 LED OFF:
-
-
-
-
-## Proteus layout(Add pdf screen shot of circuit here)
  
- 
+ ![Screenshot 2023-04-26 085201](https://user-images.githubusercontent.com/119393983/234461543-5e50423b-fad5-45b8-80b4-694bb4785ccc.jpg)
+
  
  
 ## Result :
