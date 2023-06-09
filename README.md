@@ -107,20 +107,20 @@ int main(void)
 
 
 ## Output screen shots of proteus  :
-LED OFF:
+## LED OFF:
 
 ![Screenshot 2023-06-09 164728](https://github.com/vasundrasriravi/EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED-WITH-PROTEUS-/assets/119393983/73f495f1-254a-4006-aa0f-aae7ae35be2e)
 
 
 
-LED ON:
+## LED ON:
  
 
 ![Screenshot 2023-06-09 164528](https://github.com/vasundrasriravi/EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED-WITH-PROTEUS-/assets/119393983/9663b677-9bc0-4ae8-9d74-c9cb17df0066)
 
 
 
-PROTEUS LAYOUT:
+## PROTEUS LAYOUT:
 ![Screenshot 2023-06-09 135713](https://github.com/vasundrasriravi/EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED-WITH-PROTEUS-/assets/119393983/ce19a87b-4728-4133-993e-e89e88155058)
 
 
