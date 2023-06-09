@@ -76,42 +76,32 @@ Developed by:Vasundra sri.R
 Reference number:212222230168
 
 #include "main.h"
+#include"stdio.h"
+#include"stdbool.h"
+bool pm;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-
 int main(void)
 {
-    HAL_Init();
+  HAL_Init();
   SystemClock_Config();
-
   MX_GPIO_Init();
- 
-  while (1)
-  {
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
-      HAL_Delay(500);
-      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
-      HAL_Delay(500); 
+	  while (1)
+	    {
+	     pm= HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_1);
+	      if(pm==0)
+              {
+	  	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+	  	HAL_Delay(1000);
+	  	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+	  	HAL_Delay(1000);
+	       }
+	      else
+	       {
+	  	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+	        }
+	     }
   }
-}
-
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
-  {
-    Error_Handler();
-  }
-}
-
-
-void Error_Handler(void)
-{
-  __disable_irq();
-  while (1)
-  {
-  }
-}
-
-	
-```
 
 
 
@@ -123,9 +113,13 @@ LED ON:
 
 LED OFF:
  
- ![Screenshot 2023-04-26 085201](https://user-images.githubusercontent.com/119393983/234461543-5e50423b-fad5-45b8-80b4-694bb4785ccc.jpg)
+![Screenshot 2023-06-09 135713](https://github.com/vasundrasriravi/EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED-WITH-PROTEUS-/assets/119393983/ea878d06-6f65-4f75-8b8f-a7d119430342)
 
- 
+## PROTEUS LAYOUT:
+![Screenshot 2023-06-09 135713](https://github.com/vasundrasriravi/EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED-WITH-PROTEUS-/assets/119393983/e297f7f9-9773-4e54-bec8-d2d2bc2fcd53)
+
+
+
  
 ## Result :
 Interfacing a digital output and digital input  with ARM microcontroller are simulated in proteus and the results are verified.
